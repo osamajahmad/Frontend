@@ -1,0 +1,252 @@
+/* ISTE-140 Project 1 — Parts 1–3
+   Student: Hussain Dahodwala, Osama Ahmad, Nasheel Nadeem, Mohammed Adil
+   Theme: Fortnite Fan Hub
+   NOTE (from assignment): Pages can have more elements and subsections
+   and a more complex layout, but must follow the general rules and cannot
+   miss any of the required elements (header, nav, main, aside, footer).
+*/
+
+:root{
+  --ink:#0e1015;              
+  --accent:#9A58FD;           
+  --accent2:#00c2ff;         
+  --border:#2d2f35;          
+  --card:#1a1c23;             
+  --text-light:#e4e8f1;       
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh; /* Incase */
+  font:16px/1.6 Arial, sans-serif;
+  color:var(--text-light);         
+  background:linear-gradient(180deg,#121419,#1e2026); /* 180 means it goes from top to bottom */
+}
+
+/* --- Page wrapper for footer push --- */
+.wrapper{
+  width:100%; /* full screen */
+  max-width:100%; /* doesn't exceed the full screen */
+  margin:0 auto; /* removes any margin */
+  min-height:100vh; /* pushes the footer down to the bottom */
+  display:flex; /* convert it into a flex to help in pushing the footer down */
+  flex-direction:column; /* header -> content -> footer. */
+}
+
+.content{
+  flex:1;
+  padding:1rem; /* the space between the main bar and the content in middle */
+}
+
+/* --- Header --- */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:10; /* Header type is sticky which keeps it at the top even if scrolling down */
+  background:#1c1f26;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+/* For the picture and writing to be in the same line (in the top of the page) */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.8rem;
+  padding:.8rem 1rem;
+}
+
+.brand h1{
+  font-size:2.5rem;
+  color:var(--accent);  
+}
+
+/* The Bar */
+nav.primary{
+  border-top:1px solid var(--border);
+  background:#1c1f26;
+}
+
+/* Categories */
+nav.primary ul{
+  list-style:none;
+  display:flex; /* Used to put them side by side */
+  gap:.6rem;
+  flex-wrap:wrap; /* If categories exceeded then have another line */
+  padding:.55rem 1rem;
+}
+
+/* Categories */
+nav.primary a{
+  display:inline-block; /* Makes the button act as a block */
+  padding:.5rem .85rem; /* space sizes on sides and top/bottom */
+  text-decoration:none; /* No underline */
+  font-weight:700;
+  color:var(--text-light);     
+  background:#2c2f36;        
+  border:1px solid var(--border);
+  border-radius:999px; /* To make the button fully round */
+  transition:all 0.3s ease;    
+}
+
+/* Active page tab */
+nav.primary a[aria-current="page"] {
+  background: var(--accent); /* active purple */
+  color: #fff;               /* active text */
+}
+
+/* When the mouse is on the button */
+nav.primary a:hover{
+  background:var(--accent);
+  color:#fff;
+  transform: scale(1.05);      /* This helps in making a small pop in the  */
+}
+
+/* main + sidebar */
+main,.sidebar{width:100%;}
+@media(min-width:900px){
+  .content{display:flex;gap:2rem;align-items:flex-start;}
+  main{flex:2;} /* Welcome Gamers part */
+  .sidebar{flex:1;} /* Quick links */
+  .aside-left{flex-direction:row-reverse;} /* swap columns */
+}
+
+/* Sidebar */
+.sidebar{
+  background: linear-gradient(180deg,#222436,#1e2d38); 
+  border:1px solid var(--border);
+  border-radius:20px;         
+  padding:1rem;
+}
+.sidebar h2{
+  font-size:1.05rem;
+  margin-bottom:.5rem; /* For heading */
+  color:var(--accent2);         
+}
+.sidebar p{color:#9ca3af;} /* paragraph */
+.sidebar ul{margin:.5rem 0 0 1.1rem;} /* unordered list */
+.sidebar li{margin:.25rem 0;} /* list have vertical space between each list item */
+.sidebar a{
+  text-decoration:none;
+  font-weight:600;
+  color:var(--text-light);     
+}
+.sidebar a:hover{
+  text-decoration:underline;
+  color:var(--accent2);         
+}
+
+/* Cards */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:1rem 1.25rem 2rem; /* top right bottom left */
+  margin-bottom:1rem;
+  color:var(--text-light);     
+}
+.card:hover{
+  box-shadow: 0 12px 24px rgba(0,0,0,0.45); 
+}
+.card h2{
+  font-size:2rem;
+  margin-top:.1rem; /* For heading */
+  color:var(--accent);          
+}
+.card h3{
+  font-size:1.5rem;
+  margin-top:.1rem; /* For heading */
+  color:var(--accent2);         
+}
+.card ul{
+  padding-left: 1.5em;
+}
+.card dt{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #9A58FD;
+}
+
+/* Home Image */
+.figure-wrap{
+  float:right;
+  width:min(38%,420px);
+  margin:0 0 1rem 1rem; /* top right bottom left */
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  background:#1f2026;
+  box-shadow: 0 4px 6px #000;
+}
+.figure-wrap img{display:block;width:100%;height:auto;}
+.figure-wrap figcaption{
+  font-size:.85rem;
+  padding:.4rem .6rem;
+  background:#11131a;
+  border-top:1px solid var(--border);
+  color:var(--text-light);
+}
+
+/* Tables */
+table.data{
+  width:100%;
+  border-collapse:collapse;
+  border:1px solid var(--border);
+  background:#1c1f26;
+  color:var(--text-light);
+}
+table.data caption{
+  text-align:left;
+  font-weight:700;
+  padding:.6rem .8rem;
+  background:#292b35;
+  border-bottom:1px solid var(--border);
+}
+table.data th,table.data td{
+  padding:.6rem .75rem;
+  border-top:1px solid var(--border);
+}
+table.data th{
+  background:var(--accent);     
+  color:#fff;                   
+}
+tbody tr:nth-child(even){
+  background:#23252c;
+}
+tbody tr:hover {
+  background:#2c2f38;
+}
+
+/* Footer */
+.site-footer{
+  margin-top:0;
+  padding:1rem 1.25rem;
+  border-top:2px solid var(--accent2); 
+  background:#11131a;             
+  color:#9ca3af;                   
+  text-align:center;
+}
+
+/* Accessibility */
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  position:static;
+  width:auto;
+  height:auto;
+  padding:.4rem .6rem;
+  background:#000;
+  color:#fff;
+  border-radius:12px;
+}
+
+/* Helps in focus mode when your mouse is on one of the buttons */
+a:focus,button:focus{
+  outline:3px solid var(--accent2);
+  outline-offset:2px;
+}
+
