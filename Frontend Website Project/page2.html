@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hussain Dahodwala">
+    <title>Places to go</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="page2.js" defer></script>
+  </head>
+  <body class="page-places">
+    <audio id="audio" src="assets/media/nature-sounds.mp3" loop muted></audio>
+    <header class="site-header">
+      <div class="container topbar">
+        <div class="logo">SWITZERLAND</div>
+        <span class="lang">Language EN ▾</span>
+        <label class="hamburger" for="nav-toggle"></label>
+        <input type="checkbox" id="nav-toggle">
+        <nav class="primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a aria-current="page" href="page2.html">Places to go</a></li>
+            <li><a href="page3.html">Things to do</a></li>
+            <li><a href="page4.html">Contact us</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><button id="audio_btn" class="btn"><img id="playAudio" src="assets/media/mute-btn.png" alt="audio unmute/mute"></button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-photo" aria-label="Places to go banner">
+      <img src="assets/media/places.jpg" alt="Wide scenic banner">
+    </section>
+
+    <section class="prologue">
+      <div class="container">
+        <div class="breadcrumb-inline">
+          <a href="index.html">Home</a> | <span>Places to go</span>
+        </div>
+        <h1>PLACES TO GO IN SWITZERLAND</h1>
+        <p>Explore Swiss regions, lakeside towns and alpine villages.</p>
+        <div class="filters">
+          <button id="ALL_btn" class="chip active" type="button">All</button>
+          <button id="Cities_btn" class="chip" type="button">Cities</button>
+          <button id="Lakes_btn" class="chip" type="button">Lakes</button>
+          <button id="Mountains_btn" class="chip" type="button">Mountains</button>
+          <button id="Family_btn" class="chip" type="button">Family</button>
+        </div>
+      </div>
+    </section>
+
+    <main id="main" class="container layout">
+      <section>
+        <div class="grid">
+          <article id="zurichTile" class="tile">
+            <div class="media"><img src="assets/media/zurich.jpg" alt=""></div>
+            <div class="body"><h3>Zurich Region</h3><p class="muted">Old town lanes, museums &amp; lake views.</p><div class="meta"><span class="badge">City</span><span class="badge">Culture</span></div></div>
+          </article>
+          <article id="lakeTile" class="tile">
+            <div class="media"><img src="assets/media/lake.jpeg" alt=""></div>
+            <div class="body"><h3>Lucerne &amp; Lake</h3><p class="muted">Chapel Bridge &amp; mountain day trips.</p><div class="meta"><span class="badge">Lake</span><span class="badge">Family</span></div></div>
+          </article>
+          <article id="berneseTile" class="tile">
+            <div class="media"><img src="assets/media/bernese.jpg" alt=""></div>
+            <div class="body"><h3>Bernese Oberland</h3><p class="muted">Interlaken, Lauterbrunnen &amp; Jungfrau.</p><div class="meta"><span class="badge">Mountains</span></div></div>
+          </article>
+        </div>
+
+        <main id="map">
+        <div class="map-cta">
+          <div class="thumb" aria-hidden="true"><img src="assets/media/map.png" alt=""></div>
+          <div><strong>View these places on a map</strong><br>See approximate locations and nearby routes.</div>
+          <a class="btn primary" target="_blank" href="https://www.google.com/maps/search/things+to+do+in+switzerland/@46.7733782,7.0618179,7.92z?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D">Open map</a>
+        </main>
+        </div>
+      </section>
+
+      <aside class="side">
+        <h3>On this page</h3>
+        <ul>
+          <li><a href="#main">Places list</a></li>
+          <li><a href="#map">Map</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="page2.html">Places to go</a></li><li><a href="page3.html">Things to do</a></li></ul></div>
+        <div class="footer-col"><h4>Help</h4><ul><li><a href="page4.html">Contact us</a></li><li><a href="references.html">References</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy</a></li></ul></div>
+        <div class="footer-col"><h4>More</h4><ul><li><a href="index.html">Home</a></li></ul></div>
+      </div>
+      <div class="container footer-bottom">© 2025 All Rights Reserve To Their Respective Owners</div>
+    </footer>
+  </body>
+</html>
