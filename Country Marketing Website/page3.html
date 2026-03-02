@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hussain Dahodwala">
+    <title>Things to do</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="page3.js" defer></script>
+  </head>
+  <body>
+    <audio id="audio" src="assets/media/nature-sounds.mp3" loop muted></audio>
+    <header class="site-header">
+      <div class="container topbar">
+        <div class="logo">SWITZERLAND</div>
+        <span class="lang">Language EN ▾</span>
+        <label class="hamburger" for="nav-toggle"></label>
+        <input type="checkbox" id="nav-toggle">
+        <nav class="primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Places to go</a></li>
+            <li><a aria-current="page" href="page3.html">Things to do</a></li>
+            <li><a href="page4.html">Contact us</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><button id="audio_btn" class="btn"><img id="playAudio" src="assets/media/mute-btn.png" alt="audio unmute/mute"></button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-photo" aria-label="Things to do banner">
+      <img src="assets/media/adventure.jpg" alt="Wide activity banner">
+    </section>
+
+    <section class="prologue" id="prologue">
+      <div class="container">
+        <div class="breadcrumb-inline">
+          <a href="index.html">Home</a> | <span>Things to do</span>
+        </div>
+        <h1>THINGS TO SEE &amp; DO IN SWITZERLAND</h1>
+        <p>Experiences across Switzerland — outdoor, culture, rail and more.</p>
+        <div class="filters">
+          <button id="ALL_btn" class="chip active" type="button">All</button>
+          <button id="Outdoors_btn" class="chip" type="button">Outdoors</button>
+          <button id="Culture_btn" class="chip" type="button">Culture</button>
+          <button id="Rail_btn" class="chip" type="button">Rail</button>
+          <button id="Family_btn" class="chip" type="button">Family</button>
+        </div>
+      </div>
+    </section>
+
+    <main id="main" class="container layout">
+      <section>
+        <div class="grid">
+          <article id="hikeTile" class="tile">
+            <div class="media"><img src="assets/media/hike.jpg" alt=""></div>
+            <div class="body"><h3>Panoramic hikes</h3><p class="muted">Beginner to intermediate routes with cableways.</p><div class="meta"><span class="badge">Outdoors</span></div></div>
+          </article>
+          <article id="railTile" class="tile">
+            <div class="media"><img src="assets/media/scenic_rail.jpg" alt=""></div>
+            <div class="body"><h3>Scenic rail journeys</h3><p class="muted">Iconic lines and regional passes.</p><div class="meta"><span class="badge">Rail</span></div></div>
+          </article>
+          <article id="museumTile" class="tile">
+            <div class="media"><img src="assets/media/museum.jpg" alt=""></div>
+            <div class="body"><h3>Museums &amp; design</h3><p class="muted">From art to watchmaking heritage.</p><div class="meta"><span class="badge">Culture</span></div></div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="side">
+        <h3>On this page</h3>
+        <ul>
+          <li><a href="#prologue">Places List</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="page2.html">Places to go</a></li><li><a href="page3.html">Things to do</a></li></ul></div>
+        <div class="footer-col"><h4>Help</h4><ul><li><a href="page4.html">Contact us</a></li><li><a href="references.html">References</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy</a></li></ul></div>
+        <div class="footer-col"><h4>More</h4><ul><li><a href="index.html">Home</a></li></ul></div>
+      </div>
+      <div class="container footer-bottom">© 2025 All Rights Reserve To Their Respective Owners</div>
+    </footer>
+  </body>
+</html>

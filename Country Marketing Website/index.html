@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hussain Dahodwala">
+    <title>Switzerland Travel — Home</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="container topbar">
+        <div class="logo">SWITZERLAND</div>
+        <span class="lang">Language EN ▾</span>
+        <label class="hamburger" for="nav-toggle" aria-label="Open menu"></label>
+        <input type="checkbox" id="nav-toggle">
+        <nav class="primary" aria-label="Primary navigation">
+          <ul>
+            <li><a aria-current="page" href="index.html">Home</a></li>
+            <li><a href="page2.html">Places to go</a></li>
+            <li><a href="page3.html">Things to do</a></li>
+            <li><a href="page4.html">Contact us</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><button id="audio_btn" class="btn"><img id="playAudio" src="assets/media/mute-btn.png" alt="audio unmute/mute"></button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <audio id="audio" src="assets/media/nature-sounds.mp3" loop muted></audio>
+      <!-- Video hero (shorter so users see there is more) -->
+      <section class="video-hero" aria-label="Scenic Switzerland video">
+        <video id="video"  disablepictureinpicture autoplay muted loop>
+          <source src="assets/media/video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-caption">
+          <h1>START YOUR STORY IN SWITZERLAND</h1>
+          <p>Where alpine drama meets peaceful lakes — and every visit feels like an escape.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="page2.html">Places to go</a>
+            <a class="btn ghost" href="page3.html">Things to do</a>
+            <a class="btn ghost" href="page4.html">Contact us</a>
+            <button class="btn ghost img" id="vid_btn"><img id="playIMG"  src="assets/media/pausebtn.png" alt="Play/Pause"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="inspo">
+        <div class="container">
+          <h2>Inspiration for your trip</h2>
+          <p class="lede">Browse starter ideas across cities, lakes and mountains.</p>
+
+          <div class="list-grid">
+            <article class="list-item">
+              <div class="thumb"><img src="assets/media/activity.jpg" alt="Activities"></div>
+              <div class="item"><h3>Things to see &amp; do in Switzerland</h3><p>Hikes, rail journeys, museums and more.</p></div>
+            </article>
+            <article class="list-item">
+              <div class="thumb"><img src="assets/media/scenery.jpeg" alt="Nature"></div>
+              <div class="item"><h3>Landscapes, scenery &amp; nature</h3><p>Turquoise lakes, valleys and glacier views.</p></div>
+            </article>
+            <article class="list-item">
+              <div class="thumb"><img src="assets/media/festival.jpg" alt="Events"></div>
+              <div class="item"><h3>Events &amp; festivals</h3><p>From city culture to alpine traditions.</p></div>
+            </article>
+            <article class="list-item">
+              <div class="thumb"><img src="assets/media/accommodation.jpg" alt="Stays"></div>
+              <div class="item"><h3>Unusual accommodation</h3><p>Cabins, huts and lakeside stays.</p></div>
+            </article>
+            <article class="list-item">
+              <div class="thumb"><img src="assets/media/passes.jpg" alt="Passes"></div>
+              <div class="item"><h3>Passes &amp; offers</h3><p>Explore more for less with rail passes.</p></div>
+            </article>
+            <article class="list-item">
+              <div class="thumb"><img src="assets/media/food.jpg" alt="Food"></div>
+              <div class="item"><h3>Swiss food &amp; drink</h3><p>Chocolate, fondue and farm-to-table.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col"><h4>Explore</h4>
+          <ul><li><a href="page2.html">Places to go</a></li><li><a href="page3.html">Things to do</a></li></ul>
+        </div>
+        <div class="footer-col"><h4>Help</h4>
+          <ul><li><a href="page4.html">Contact us</a></li><li><a href="references.html">References</a></li></ul>
+        </div>
+        <div class="footer-col"><h4>About</h4><p>Independent Switzerland travel resource.</p></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy</a></li></ul></div>
+      </div>
+      <div class="container footer-bottom">© 2025 All Rights Reserve To Their Respective Owners</div>
+    </footer>
+  </body>
+</html>
